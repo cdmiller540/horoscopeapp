@@ -19,7 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func getHoroscope(sender: AnyObject) {
+            horoscope.text = "This is your horoscope"
+        
+    }
 
-
+    @IBOutlet weak var monthTextField: UITextField!
+    @IBOutlet weak var dayTextField: UITextField!
+    @IBOutlet weak var horoscope: UILabel!
 }
 
